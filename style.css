@@ -1,18 +1,54 @@
-body {
-  background: #e6c9f0;
-  font-family: sans-serif;
-  text-align: center;
-}
-
 #cards {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   gap: 10px;
+  margin-bottom: 20px;
 }
 .card {
   background: white;
   padding: 10px;
   border-radius: 6px;
   text-align: center;
+  cursor: pointer;
 }
 
+#board {
+  display: grid;
+  grid-template-columns: repeat(5, 50px);
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: default;
+}
+
+.cell.drawn {
+  background: orange;
+  color: white;
+}
+
+.cell.bingo {
+  background: green;
+  color: white;
+}
+
+#drawnNumbers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.drawn {
+  padding: 5px;
+  border-radius: 4px;
+  background: orange;
+  color: white;
+  font-weight: bold;
+}
