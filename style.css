@@ -1,0 +1,19 @@
+body {
+  background: #e6c9f0;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+#cards {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 8px;
+  padding: 20px;
+}
+
+.card {
+  padding: 12px;
+  background: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
