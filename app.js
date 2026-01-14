@@ -1,6 +1,3 @@
-const tg = window.Telegram.WebApp;
-tg.expand();
-
 const cardsDiv = document.getElementById("cards");
 
 for (let i = 1; i <= 100; i++) {
@@ -9,8 +6,9 @@ for (let i = 1; i <= 100; i++) {
   card.innerText = i;
 
   card.onclick = () => {
-    tg.sendData("card_" + i);
-  };
+  tg.sendData("card_" + i);
+};
+
 
   cardsDiv.appendChild(card);
 }
